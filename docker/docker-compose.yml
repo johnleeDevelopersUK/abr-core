@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  abr-node:
+    build:
+      context: .
+      dockerfile: Dockerfile.abr
+    container_name: abr-node
+    volumes:
+      - abr-data:/root/.abrcore
+      - ./abr.conf:/root/.abrcore/abr.conf
+    ports:
+      - "9333:9333"
+      - "9332:9332"
+    networks:
+      - abr-net
+    command: abrd -printtoconsole
+
+volumes:
+  abr-data:
+
+networks:
+  abr-net:
+    driver: bridge

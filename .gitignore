@@ -1,0 +1,61 @@
+# Sensitive files - NEVER commit these
+scripts/genesis_keys.json
+scripts/central_bank_wallets.json
+scripts/whale_wallets.json
+scripts/swf_wallets.json
+scripts/dev_fund_wallet.json
+scripts/*.gpg
+scripts/*.enc
+config/*/abr.conf
+!config/*/abr.conf.template
+docker/abr.conf
+docker/.env
+
+# Build artifacts
+build/
+*.o
+*.a
+*.so
+*.dll
+*.exe
+*.out
+*.app
+abr-core/src/abrd
+abr-core/src/abr-cli
+abr-core/src/abr-tx
+
+# Dependencies
+deps/
+*.dep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+logs/
+*.log
+
+# Data
+data/
+*.dat
+*.db
+
+# Environment
+.env
+.venv
+venv/
+ENV/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
