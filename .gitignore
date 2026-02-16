@@ -1,9 +1,4 @@
-# Sensitive files - NEVER commit these
-scripts/genesis_keys.json
-scripts/central_bank_wallets.json
-scripts/whale_wallets.json
-scripts/swf_wallets.json
-scripts/dev_fund_wallet.json
+
 scripts/*.gpg
 scripts/*.enc
 config/*/abr.conf
