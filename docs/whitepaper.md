@@ -2,7 +2,7 @@ AFRICA BITCOIN RESERVE (ABR)
 A Sovereign Digital Reserve Network for the African Century
 
 Whitepaper Version 2.0
-March 2026
+February 2026
 
 1. Executive Summary
 
